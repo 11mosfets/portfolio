@@ -5,8 +5,8 @@ Welcome to my personal portfolio! This website showcases my journey and expertis
 ## 🚀 About Me
 
 I am a **Data Engineer & VLSI Designer** with a dual passion for hardware precision and data scalability. 
-- **Experience**: ~1.5 years across **Xagrot**, **LTIMindtree**, and **Energy Institute Bangalore**.
-- **Education**: MS in Computer Science (Data Science & ML) from Scaler Neovarsity (WOOLF University).
+- **Experience**: ~1 year across **LTIMindtree** and **Energy Institute Bangalore**.
+- **Education**: MS in Computer Engineering (Electrical Engineering) from Arizona State University.
 - **Core Skills**: Python, SQL, Snowflake, AWS, SystemVerilog, 7nm PDK, Streamlit, Tableau.
 
 ## 📂 Project Highlights
@@ -24,10 +24,11 @@ The portfolio features 17 detailed projects across four key domains:
 - **Layout**: Fully responsive design with CSS Grid/Flexbox.
 
 ## 🔗 Live Site
-[Pending GitHub Pages Deployment]
+https://www.akshatbaranwal.me
 
 ## 📄 License
 This project is licensed under the **Creative Commons Attribution 4.0 International License**.
 
 ---
 © 2026 Akshat Baranwal. All Rights Reserved.
+
