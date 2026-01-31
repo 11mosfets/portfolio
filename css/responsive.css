@@ -4,19 +4,20 @@
    General Responsive Styling
    ------------------------------------------- */
 @media only screen and (max-width: 480px) {
+
     /* General adjustments */
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1.5rem;
     }
-    
+
     h3 {
         font-size: 1.2rem;
     }
-    
+
     .detail-row {
         flex-direction: column;
     }
@@ -36,20 +37,20 @@
     .hero-content {
         flex-direction: column-reverse;
     }
-    
+
     .hero-image {
         margin-bottom: 2rem;
     }
-    
+
     .hero-image img {
         max-width: 180px;
         height: auto;
     }
-    
+
     .hero-title {
         font-size: 1.2rem;
     }
-    
+
     .hero-cta {
         flex-direction: column;
         gap: 1rem;
@@ -64,15 +65,15 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .about-image {
         order: -1;
     }
-    
+
     .about-image img {
         max-width: 280px;
     }
-    
+
     .detail-row {
         grid-template-columns: 1fr;
     }
@@ -82,11 +83,11 @@
     .about-text h3 {
         font-size: 1.5rem;
     }
-    
+
     .about-details {
         margin-top: 1.5rem;
     }
-    
+
     .detail-icon {
         width: 2.5rem;
         height: 2.5rem;
@@ -101,7 +102,7 @@
     .education-card {
         padding: 1.5rem;
     }
-    
+
     .education-year {
         position: relative;
         display: inline-block;
@@ -109,11 +110,11 @@
         left: 0;
         margin-bottom: 1rem;
     }
-    
+
     .education-degree {
         font-size: 1.1rem;
     }
-    
+
     .education-school {
         font-size: 1rem;
     }
@@ -123,7 +124,7 @@
     .education-highlights {
         gap: 0.5rem;
     }
-    
+
     .education-highlight {
         padding: 0.4rem 0.75rem;
         font-size: 0.8rem;
@@ -137,7 +138,7 @@
     .skills-content {
         grid-template-columns: 1fr;
     }
-    
+
     .skills-category {
         margin-bottom: 1.5rem;
     }
@@ -147,7 +148,7 @@
     .skills-category {
         padding: 1.5rem;
     }
-    
+
     .skill-tag {
         padding: 0.5rem 0.8rem;
         font-size: 0.8rem;
@@ -162,7 +163,7 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .contact-info {
         order: 2;
     }
@@ -174,15 +175,15 @@
         align-items: flex-start;
         padding: 1.25rem;
     }
-    
+
     .contact-icon {
         margin-bottom: 1rem;
     }
-    
+
     .contact-form {
         padding: 1.5rem;
     }
-    
+
     .form-group {
         margin-bottom: 1rem;
     }
@@ -195,21 +196,21 @@
     .footer {
         padding: 2rem 0 1rem;
     }
-    
+
     .footer-logo {
         font-size: 1.5rem;
     }
-    
+
     .footer-social {
         gap: 0.75rem;
     }
-    
+
     .social-link {
         width: 35px;
         height: 35px;
         font-size: 1rem;
     }
-    
+
     #scrollToTop {
         bottom: 1.5rem;
         right: 1.5rem;
@@ -226,16 +227,12 @@
         flex-wrap: wrap;
         gap: 0.5rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* -------------------------------------------
-   Publications Component Responsive Styling
-   ------------------------------------------- */
-/* Responsive styles now included directly in publications.css with a mobile-first approach */
 
 /* -------------------------------------------
    Certifications Component Responsive Styling
@@ -247,12 +244,7 @@
     }
 }
 
-/* -------------------------------------------
-   Achievements Component Responsive Styling
-   ------------------------------------------- */
-@media only screen and (max-width: 480px) {
-    /* Achievement-specific mobile styles would go here */
-}
+
 
 /* -------------------------------------------
    Tablet Responsive Styles (481px - 768px)
@@ -295,12 +287,15 @@ form .form-success {
 }
 
 /* Better link styling for the resume section */
-.btn-preview, .btn-download {
+.btn-preview,
+.btn-download {
     padding: 0.75rem 1.25rem;
 }
 
 @media (max-width: 480px) {
-    .btn-preview, .btn-download {
+
+    .btn-preview,
+    .btn-download {
         width: 100%;
         margin-bottom: 0.75rem;
         text-align: center;
@@ -308,7 +303,8 @@ form .form-success {
 }
 
 /* Add smooth image transitions */
-.project-image img, .profile-image {
+.project-image img,
+.profile-image {
     transition: transform var(--transition-normal);
 }
 

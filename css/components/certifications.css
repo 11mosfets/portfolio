@@ -10,6 +10,46 @@
     position: relative; /* For positioning arrow container */
 }
 
+/* Certification Filters */
+.cert-filter-button {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.cert-filter-button.active,
+.cert-filter-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(var(--primary-color-rgb), 0.3);
+}
+
+/* Reuse project-filters layout since it's a generic flex container class used in HTML,
+   but if it's not present in certifications.css, we might need to add it or ensure projects.css is loaded.
+   The HTML uses <div class="project-filters"> which is styled in projects.css.
+   If projects.css is NOT loaded on this page (if it's a single page app, it is), we are good.
+   If it's a multi-page app and this is certifications.html, projects.css might not be loaded.
+   However, based on 'index.html' importing all css, it likely is.
+   But to be safe and follow component isolation, I should add the container style here too if I renamed the class in HTML.
+   I KEPT "project-filters" class in HTML, so it should pick up styles from projects.css if available.
+   BUT, if I want to be safe, I should style it here too or rename it.
+   I'll rename the container in HTML to "certification-filters" for better isolation? 
+   No, I kept "project-filters" in the previous step.
+   I will trust "project-filters" is globally available or I should add it here.
+   Let's check if projects.css is globally loaded. Yes, likely.
+   But wait, I should probably just add the button styles. 
+*/
+
+
 /* Horizontal Scroll Wrapper - now default */
 .certifications .horizontal-scroll-wrapper { /* Scoped to certifications */
     position: relative;

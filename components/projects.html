@@ -7,115 +7,456 @@
         </div>
         <div class="project-filters">
             <button class="filter-button active" data-filter="all">All Projects</button>
-            <button class="filter-button" data-filter="sde">Software Development</button>
-            <button class="filter-button" data-filter="dsml">Data Science & ML</button>
+            <button class="filter-button" data-filter="semiconductors">Semiconductors</button>
+            <button class="filter-button" data-filter="ee">Electrical Engineer</button>
+            <button class="filter-button" data-filter="vlsi">VLSI</button>
+            <button class="filter-button" data-filter="de">Data Engineer</button>
         </div>
         <div class="scroll-arrow-container">
-           <button class="scroll-arrow prev-arrow" aria-label="Previous items">
-               <i class="fas fa-chevron-left"></i>
-           </button>
-           <button class="scroll-arrow next-arrow" aria-label="Next items">
-               <i class="fas fa-chevron-right"></i>
-           </button>
-       </div>
+            <button class="scroll-arrow prev-arrow" aria-label="Previous items">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-arrow next-arrow" aria-label="Next items">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
         <div class="horizontal-scroll-wrapper">
-            <div class="scroll-content projects-grid"> <!-- SDE Project 1 -->
-            <div class="project-card" data-category="sde">
-                <div class="project-image">
-                    <img src="assets/projects/Delta_metrics.jpeg" alt="Automated Code Quality & Security Reporting System">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Automated Code Quality & Security Reporting System</h3>
-                    <p class="project-description">Engineered an automated Jenkins pipeline to retrieve SonarQube/Veracode metrics, reducing manual code audit efforts by over 70%. Implemented delta analysis and structured email reporting, enhancing DevSecOps visibility across 80% of cloud-hosted microservices.</p>                    <div class="project-tech-stack">
-                        <span class="tech-tag">Jenkins</span>
-                        <span class="tech-tag">SonarQube</span>
-                        <span class="tech-tag">Veracode</span>
-                        <span class="tech-tag">DevSecOps</span>
+            <div class="scroll-content projects-grid">
+
+                <!-- EE: Smart Grid -->
+                <div class="project-card" data-category="ee">
+                    <div class="project-image">
+                        <img src="assets/projects/EE/Grid.jpg" alt="Smart Grid Energy Monitoring">
                     </div>
-                    <div class="project-links">
-                        <span class="project-note"><i class="fas fa-building"></i> Internal Company Project</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- SDE Project 2 -->
-            <div class="project-card" data-category="sde">
-                <div class="project-image">
-                    <img src="assets/projects/Application_Enhancements.jpeg" alt="Application Enhancements">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Experiments on Application Enhancements</h3>
-                    <p class="project-description">Built multiple user experience improvements including an in-app feedback system (20% boost in user satisfaction), interactive application tour, drag-and-drop report builder, recommendation system with Elasticsearch KNN search (25% reduction in repetitive actions), and automated 3D model segmentation for COLLADA files.</p>                    <div class="project-tech-stack">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Elasticsearch</span>
-                        <span class="tech-tag">Three.js</span>
-                        <span class="tech-tag">UX Design</span>
-                    </div>
-                    <div class="project-links">
-                        <span class="project-note"><i class="fas fa-building"></i> Internal Company Project</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Grid Energy Monitoring & Forecasting System</h3>
+                        <p class="project-description">Developed a real-time IoT dashboard using Streamlit and Python to
+                            monitor PV array health, enabling instant visualization of voltage sags and thermal
+                            anomalies. Architected a time-series data pipeline utilizing SQL to aggregate high-frequency
+                            sensor data. Engineered a Grid Load Forecasting model using Random Forest to predict
+                            next-day energy demand, reducing MAE by 12%.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
                     </div>
                 </div>
-            </div>
-              <!-- DSML Project 1 -->
-            <div class="project-card" data-category="dsml">
-                <div class="project-image">
-                    <img src="assets/projects/DSML_CaseStudies.jpeg" alt="Data Science Case Studies">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">End-to-End Data Science Case Studies</h3>
-                    <p class="project-description">Conducted 10 data-driven case studies across sectors like e-commerce, entertainment, and financial services. Developed high-performing predictive models for driver churn (93.8% F1, 96.3% ROC-AUC) and loan default (90% ROC-AUC), engineered delivery features uncovering time estimation discrepancies, and applied clustering for learner segmentation.</p>
-                    <div class="project-tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">XGBoost</span>
+
+                <!-- EE: Solar Tracking -->
+                <div class="project-card" data-category="ee">
+                    <div class="project-image">
+                        <img src="assets/projects/EE/Solar.jpg" alt="Solar Tracking">
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/aravinthvr/dsml-business-case-studies" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
-                        <a href="#" class="project-link open-pdf-modal" data-modal-title="Data Science Case Study"><i class="fas fa-file-alt"></i> Case Study</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- DSML Project 2 -->
-            <div class="project-card" data-category="dsml">
-                <div class="project-image">
-                    <img src="assets/projects/Tableau_Inference.jpg" alt="Interactive Dashboards">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Interactive Tableau Dashboards</h3>
-                    <p class="project-description">Designed and implemented interactive dashboards using Tableau, enhancing strategic reporting efficiency by 30%. Analyzed datasets exceeding $2.3M in sales and over 18K employees, uncovering trends for data-driven decisions. Streamlined visualization workflows, cutting report generation time by 25%.</p>
-                    <div class="project-tech-stack">
-                        <span class="tech-tag">Tableau</span>
-                        <span class="tech-tag">Data Visualization</span>
-                        <span class="tech-tag">Analytics</span>
-                        <span class="tech-tag">Dashboard Design</span>
-                    </div>                    <div class="project-links">
-                        <a href="http://public.tableau.com/views/Super_Store_Interactive_dashboard/Dashboard1?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:language=en-GB&:loadOrderID=0" class="project-link open-pdf-modal" data-modal-title="Interactive Tableau Dashboard"><i class="fas fa-chart-bar"></i> Featured Dashboard</a>
-                        <a href="https://public.tableau.com/app/profile/aravinthaprasath.venkataramanan/vizzes" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> View All Dashboards</a>
+                    <div class="project-content">
+                        <h3 class="project-title">Solar Tracking & Energy Optimization</h3>
+                        <p class="project-description">Engineered a high-voltage, 1,920-cell PV array system in
+                            MATLAB/Simulink, achieving a 4.3% energy yield increase using a single-axis tracker.
+                            Developed and benchmarked three control architectures (MPPT P&O, P&O with tracking, IC with
+                            tracking). Integrated dynamic parasitic load modeling to determine precise Net Power Yield
+                            under real-world Arizona conditions.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Simulink</span>
+                            <span class="tech-tag">MPPT</span>
+                            <span class="tech-tag">Control Systems</span>
+                            <span class="tech-tag">Power Electronics</span>
+                            <span class="tech-tag">Energy Optimization</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
                     </div>
                 </div>
-            </div>
-            
-            <!-- DSML Project 3 -->
-            <div class="project-card" data-category="dsml">
-                <div class="project-image">
-                    <img src="assets/projects/ecg-classification.svg" alt="ECG Abnormality Classification">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Classification of Abnormalities in ECG</h3>
-                    <p class="project-description">Proposed an IoT-based health monitoring system for ambulatory ECG recorders using Heart Rate Variability (HRV) and a Modified Support Vector Machine (MSVM) algorithm. The system effectively detects cardiac abnormalities while addressing challenges like memory and processing constraints.</p>
-                    <div class="project-tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Signal Processing</span>
+
+                <!-- VLSI: Neural Network FPGA -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/FPGA.png" alt="Neural Network FPGA">
                     </div>
-                    <div class="project-links">
-                        <a href="https://drive.google.com/file/d/19Kf-9laFokxeZL5L820dewXIgpgAL4bQ/view" class="project-link open-pdf-modal" data-modal-title="ECG Abnormality Classification Paper"><i class="fas fa-file-alt"></i> Research Paper</a>
+                    <div class="project-content">
+                        <h3 class="project-title">Neural Network Hardware Implementation on FPGA</h3>
+                        <p class="project-description">Designed and implemented a feed forward neural network in
+                            Verilog, complete with training and gradient computation modules synthesized on FPGA. Built
+                            memory initialization (.mif) files and FSM-based control logic. Verified functional
+                            correctness through ModelSim simulations and deployed a fully synthesizable training
+                            architecture using Quartus Prime.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Verilog</span>
+                            <span class="tech-tag">FPGA</span>
+                            <span class="tech-tag">Quartus Prime</span>
+                            <span class="tech-tag">ModelSim</span>
+                            <span class="tech-tag">Neural Networks</span>
+                            <span class="tech-tag">Digital Design</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
                     </div>
                 </div>
-            </div>
+
+                <!-- VLSI: ASIC Design for GCNs -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/ASIC.png" alt="ASIC Design GCN">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ASIC Design for accelerating GCNs</h3>
+                        <p class="project-description">Designed a low-power AI GCN accelerator using 7nm PDK. Performed
+                            synthesis with Synopsys Design Compiler and APR with Cadence Innovus (66.55 ns latency, 4.81
+                            mW power). Executed full RTL-to-GDSII flow, verified with post-layout simulation, DRC/LVS
+                            clean, achieving 51.7% placement density.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">ASIC</span>
+                            <span class="tech-tag">7nm PDK</span>
+                            <span class="tech-tag">Synopsys DC</span>
+                            <span class="tech-tag">Cadence Innovus</span>
+                            <span class="tech-tag">Physical Design</span>
+                            <span class="tech-tag">RTL-to-GDSII</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- VLSI: Data Aligner Module -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/testing.jpeg" alt="Data Aligner Verification">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hardware Verification: Data Aligner Module</h3>
+                        <p class="project-description">Setup a UVM verification environment for a high-speed Aligner
+                            module. Implemented custom MD protocol agents and APB interface to validate error handling,
+                            resulting in zero bugs in post-verification regressions. Automated sticky interrupt
+                            monitoring and backpressure testing for FIFO protection.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">UVM</span>
+                            <span class="tech-tag">SystemVerilog</span>
+                            <span class="tech-tag">Verification</span>
+                            <span class="tech-tag">APB Protocol</span>
+                            <span class="tech-tag">Testbench</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- VLSI: MIPS SoC -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/mips.jpeg" alt="MIPS SoC">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MIPS SoC Design & Implementation</h3>
+                        <p class="project-description">Architected a functional 32-bit, single-cycle MIPS CPU using
+                            SystemVerilog. Designed all core modules (ALU, Control Unit, Register File). Implemented
+                            decoding/datapath for 30+ instructions. Verified functionality with custom assembly programs
+                            and Synopsys Verdi waveform analysis.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">SystemVerilog</span>
+                            <span class="tech-tag">MIPS</span>
+                            <span class="tech-tag">CPU Architecture</span>
+                            <span class="tech-tag">Synopsys Verdi</span>
+                            <span class="tech-tag">SoC Design</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- VLSI: Robot Control -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/polulu.jpeg" alt="Robot Control">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Robot Control & Obstacle Avoidance</h3>
+                        <p class="project-description">Developed real-time embedded software for a Pololu 3pi+ (RPi
+                            Zero). Implemented sensing/control logic with gyroscope, encoders, and bump sensors.
+                            Integrated motion control using PWM and obstacle avoidance. Utilized Lingua Franca reactors
+                            for deterministic sensor fusion.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Embedded C/C++</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">Robotics</span>
+                            <span class="tech-tag">Sensor Fusion</span>
+                            <span class="tech-tag">Control Logic</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- VLSI: Inverter 7nm -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/waves.jpeg" alt="Inverter 7nm">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Standard Cell Development: 12-fin Inverter</h3>
+                        <p class="project-description">Designed a 12-fin inverter using 7nm PDK, verified with Calibre
+                            DRC/LVS. Optimized layout area and conducted pre/post-layout simulations with HSPICE to
+                            analyze parasitics. Verified compliance with standard cell library constraints.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">7nm PDK</span>
+                            <span class="tech-tag">HSPICE</span>
+                            <span class="tech-tag">Calibre</span>
+                            <span class="tech-tag">Standard Cell</span>
+                            <span class="tech-tag">Analog Layout</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- VLSI: Embedded Testing -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/testing.jpeg" alt="Embedded Testing">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Embedded Systems Functional Testing</h3>
+                        <p class="project-description">Tested communication/memory interfaces on Pololu 3pi+ Zero with
+                            RP2040 and IMU. Verified I²C, SPI, UART protocols. Tested SRAM and flash memory interactions
+                            for data integrity and bus timing. Validated firmware deployment and sensor response.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Embedded Systems</span>
+                            <span class="tech-tag">I2C/SPI/UART</span>
+                            <span class="tech-tag">Functional Testing</span>
+                            <span class="tech-tag">RP2040</span>
+                            <span class="tech-tag">Hardware Interfacing</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- VLSI: Critical Path Analysis -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/waves.jpeg" alt="Critical Path Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Critical Path Sensitivity Analysis (GCN)</h3>
+                        <p class="project-description">Performed post-route static timing analysis on a GCN accelerator.
+                            Decomposed critical paths into cell vs. interconnect delays. Analyzed timing impact of
+                            datapaths to derive optimization insights. Correlated post-CTS timing with physical design
+                            effects.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Static Timing Analysis</span>
+                            <span class="tech-tag">VLSI</span>
+                            <span class="tech-tag">Optimization</span>
+                            <span class="tech-tag">Physical Design</span>
+                            <span class="tech-tag">GCN</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- VLSI: 6T SRAM -->
+                <div class="project-card" data-category="vlsi">
+                    <div class="project-image">
+                        <img src="assets/projects/VLSI/sram.png" alt="6T SRAM Cell">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">6T SRAM Cell Design & Characterization</h3>
+                        <p class="project-description">Designed a 6T SRAM cell in Cadence Virtuoso using 7nm PDK.
+                            Characterized SNM, RNM, WNM, and Data Retention Voltage (DRV). Analyzed trade-offs in memory
+                            stability, process scaling, and reliability at advanced nodes.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Cadence Virtuoso</span>
+                            <span class="tech-tag">7nm PDK</span>
+                            <span class="tech-tag">SRAM Design</span>
+                            <span class="tech-tag">Memory Characterization</span>
+                            <span class="tech-tag">Circuit Design</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Data Engineering: Digital Twin -->
+                <div class="project-card" data-category="de">
+                    <div class="project-image">
+                        <img src="assets/projects/Semiconductors/cleanroom.jpeg" alt="Digital Twin">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cloud-Native Digital Twin & ETL Pipeline</h3>
+                        <p class="project-description">Architected a data pipeline on OCI to simulate 5nm fabrication
+                            process drift. Engineered a Cron-based ETL system to ingest telemetry into MySQL. Developed
+                            a real-time Streamlit analytics suite with SPC charts and automated yield recovery tracking.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Oracle Cloud</span>
+                            <span class="tech-tag">ETL</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Digital Twin</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://fabdata.streamlit.app" class="project-link" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Engineering: RAG System -->
+                <div class="project-card" data-category="de">
+                    <div class="project-image">
+                        <img src="assets/projects/Data%20Engineer/LLMs.jpg" alt="RAG System">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hybrid RAG E-commerce Recommendation System</h3>
+                        <p class="project-description">Designed a graph retrieval agent using Neo4j to model laptop
+                            product relationships. Developed an LLM-driven interface for natural language query
+                            translation to Cypher. Enhanced explainability with graph traversals and hybrid retrieval
+                            (SQL + Vector).</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Neo4j</span>
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Graph Database</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI Agents</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Semiconductors: Wafer Analytics -->
+                <div class="project-card" data-category="semiconductors">
+                    <div class="project-image">
+                        <img src="assets/projects/Semiconductors/wafer.png" alt="Wafer Analytics">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Semiconductor Wafer Defect Analytics</h3>
+                        <p class="project-description">Developed a Tableau dashboard analyzing 38,000-wafer defect
+                            dataset. Visualized defect origins and yield impact. Developed a CNN-based multi-class
+                            classifier using WM-811K dataset to predict defect types accurately.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Yield Analysis</span>
+                            <span class="tech-tag">Semiconductors</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://public.tableau.com/app/profile/akshat.baranwal/viz/DefectsinWafers/Dashboard1"
+                                class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semiconductors: 5nm SPC -->
+                <div class="project-card" data-category="semiconductors">
+                    <div class="project-image">
+                        <img src="assets/projects/Semiconductors/cleanroom.jpeg" alt="5nm SPC">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">5nm Process Control (SPC) & Yield Analytics</h3>
+                        <p class="project-description">Designed a Digital Twin simulation of a 5nm fab. Implemented SPC
+                            charts in Python to visualize tool drift. Built a root cause analysis engine using SQL and
+                            Streamlit to correlate upstream parameters with yield loss.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">SPC</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Yield Analytics</span>
+                            <span class="tech-tag">Process Control</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://fabdata.streamlit.app" class="project-link" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semiconductors: CVD Optimization -->
+                <div class="project-card" data-category="semiconductors">
+                    <div class="project-image">
+                        <img src="assets/projects/Semiconductors/cvd.jpg" alt="CVD Optimization">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CVD Process Optimization</h3>
+                        <p class="project-description">Designed a 2-level Full Factorial DOE in JMP to characterize CVD
+                            process. Executed Least Squares fitting; found Chamber Pressure as key driver. Generated
+                            Contour Plots and used Prediction Profiler to define stable process window (Cpk > 1.33).</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">JMP</span>
+                            <span class="tech-tag">DOE</span>
+                            <span class="tech-tag">Process Optimization</span>
+                            <span class="tech-tag">Statistical Analysis</span>
+                            <span class="tech-tag">CVD</span>
+                            <span class="tech-tag">Six Sigma</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Semiconductors: Device Analysis -->
+                <div class="project-card" data-category="semiconductors">
+                    <div class="project-image">
+                        <img src="assets/projects/Semiconductors/microprocessor.jpg" alt="Device Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Device Analysis using 7nm PDK</h3>
+                        <p class="project-description">Simulated FinFET characteristics (SLVT, LVT, RVT, SRAM) using
+                            HSPICE. Extracted subthreshold slope, Vt, leakage, and drive currents. Analyzed device
+                            speed, thermal dependencies, and validated results with automated scripts.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">7nm PDK</span>
+                            <span class="tech-tag">HSPICE</span>
+                            <span class="tech-tag">Device Physics</span>
+                            <span class="tech-tag">Semiconductor</span>
+                            <span class="tech-tag">FinFET</span>
+                            <span class="tech-tag">Characterization</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div> -->
+                    </div>
+                </div>
+
             </div> <!-- Closing scroll-content -->
         </div> <!-- Closing horizontal-scroll-wrapper -->
     </div>

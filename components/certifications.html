@@ -5,6 +5,12 @@
             <h2>Certifications</h2>
             <div class="underline"></div>
         </div>
+        <div class="project-filters">
+            <button class="cert-filter-button active" data-filter="all">All Certifications</button>
+            <button class="cert-filter-button" data-filter="ee">Electrical Engineering</button>
+            <button class="cert-filter-button" data-filter="vlsi">VLSI Design</button>
+            <button class="cert-filter-button" data-filter="de">Data Engineering</button>
+        </div>
         <div class="scroll-arrow-container">
             <button class="scroll-arrow prev-arrow" aria-label="Previous items">
                 <i class="fas fa-chevron-left"></i>
@@ -14,79 +20,207 @@
             </button>
         </div>
         <div class="horizontal-scroll-wrapper">
-            <div class="scroll-content certifications-grid"> <!-- HTML, CSS, and Javascript for Web Developers -->
-            <div class="cert-card coursera-cert">
-                <div class="cert-icon">
-                    <i class="fas fa-code"></i>
+            <div class="scroll-content certifications-grid">
+
+                <!-- Design of Experiments -->
+                <div class="cert-card coursera-cert" data-category="ee de">
+                    <div class="cert-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Design of Experiments</h3>
+                        <p class="cert-issuer">Coursera <span class="cert-logo-badge coursera-badge"><i
+                                    class="fa-solid fa-c"></i></span></p>
+                        <p class="cert-provider">Arizona State University</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Jan 2026</p>
+                        <p class="cert-description">Credential ID: 7R3UO1GNT1N4</p>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/7R3UO1GNT1N4"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-                <div class="cert-content">                    <h3 class="cert-title">HTML, CSS, and Javascript for Web Developers</h3>
-                    <p class="cert-issuer">Coursera <span class="cert-logo-badge coursera-badge"><i class="fa-solid fa-c"></i></span></p>
-                    <p class="cert-provider">Johns Hopkins University</p>
-                    <p class="cert-date"><i class="far fa-calendar-alt"></i> January 2021</p>
-                    <p class="cert-description">Comprehensive course covering web development fundamentals including responsive design, Bootstrap, and JavaScript.</p>
-                    <a href="https://www.coursera.org/api/certificate.v1/pdf/NA1Q7N842UYA" class="cert-link open-pdf-modal" data-modal-title="HTML, CSS, and Javascript for Web Developers Certificate"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+
+                <!-- Six Sigma White Belt -->
+                <div class="cert-card" data-category="ee">
+                    <div class="cert-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Six Sigma White Belt</h3>
+                        <p class="cert-issuer">The Council for Six Sigma Certification (CSSC)</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Sep 2025</p>
+                        <p class="cert-description">Credential ID: aEnYFqBloV<br>Skills: Statistical process control,
+                            Smart Manufacturing</p>
+                        <a href="https://drive.google.com/file/d/1sJQsah-jX4G-y4wfBQJCykUAscOoQZoB/view"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-            </div>            <!-- Data Science Math Skills -->
-            <div class="cert-card coursera-cert">
-                <div class="cert-icon">
-                    <i class="fas fa-calculator"></i>
+
+                <!-- Machine learning 1 -->
+                <div class="cert-card" data-category="de">
+                    <div class="cert-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Machine learning 1</h3>
+                        <p class="cert-issuer">Columbia University</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Aug 2025</p>
+                        <p class="cert-description">Skills: Machine Learning, Python (Programming Language)</p>
+                        <a href="https://badges.plus.columbia.edu/94b146e8-acda-499d-9fa1-7b35bcb0f97a#acc.oJ5pLFVA"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-                <div class="cert-content">                    <h3 class="cert-title">Data Science Math Skills</h3>
-                    <p class="cert-issuer">Coursera <span class="cert-logo-badge coursera-badge"><i class="fa-solid fa-c"></i></span></p>
-                    <p class="cert-provider">Duke University</p>
-                    <p class="cert-date"><i class="far fa-calendar-alt"></i> March 2021</p>
-                    <p class="cert-description">Essential mathematical concepts for data science including statistics, probability, linear algebra and optimization.</p>
-                    <a href="https://coursera.org/share/6caac6076eeee11c5af60ad2c603b14d" class="cert-link open-pdf-modal" data-modal-title="Data Science Math Skills Certificate"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+
+                <!-- RTL-to-GDSII -->
+                <div class="cert-card" data-category="vlsi">
+                    <div class="cert-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">RTL-to-GDSII</h3>
+                        <p class="cert-issuer">Cadence</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Aug 2025</p>
+                        <p class="cert-description">Credential ID: 143b7b12-1ed6-4ddc-be74-bb8efe1181c2</p>
+                        <a href="https://www.credly.com/badges/143b7b12-1ed6-4ddc-be74-bb8efe1181c2/public_url"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-            </div>            <!-- SQL Advanced Certificate -->
-            <div class="cert-card hackerrank-cert">
-                <div class="cert-icon">
-                    <i class="fas fa-database"></i>
+
+                <!-- Static Timing Analysis -->
+                <div class="cert-card" data-category="vlsi">
+                    <div class="cert-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Static Timing Analysis</h3>
+                        <p class="cert-issuer">Cadence</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Aug 2025</p>
+                        <p class="cert-description">Credential ID: e51d5465-3eec-49e8-b9e4-9e8e0bee9a89<br>Skills:
+                            Static Timing Analysis, Physical Design</p>
+                        <a href="https://www.credly.com/badges/e51d5465-3eec-49e8-b9e4-9e8e0bee9a89/public_url"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-                <div class="cert-content">
-                    <h3 class="cert-title">SQL (Advanced) Certificate</h3>
-                    <p class="cert-issuer">HackerRank <span class="cert-logo-badge hackerrank-badge"><i class="fab fa-hackerrank"></i></span></p>
-                    <p class="cert-date"><i class="far fa-calendar-alt"></i> April 2024 <span class="cert-validity">No Expiry</span></p>
-                    <p class="cert-description">Advanced SQL concepts including complex joins, window functions, and query optimization techniques.</p>
-                    <a href="https://www.hackerrank.com/certificates/iframe/8c589600d8d7" class="cert-link open-pdf-modal" data-modal-title="SQL (Advanced) Certificate"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+
+                <!-- Deloitte Australia - Data Analytics -->
+                <div class="cert-card" data-category="de">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Deloitte Australia - Data Analytics Job Simulation</h3>
+                        <p class="cert-issuer">Forage</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Mar 2025</p>
+                        <p class="cert-description">Credential ID: hLAJwGSaYu4hB6XEW<br>Skills: Tableau</p>
+                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_HcABnoTwSed2ag9t2_1741002206232_completion_certificate.pdf"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-            </div><!-- SQL Scaler -->
-            <div class="cert-card scaler-cert">
-                <div class="cert-icon">
-                    <i class="fas fa-database"></i>
+
+                <!-- Digital Electronics and Circuits -->
+                <div class="cert-card" data-category="vlsi">
+                    <div class="cert-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Digital Electronics and Circuits</h3>
+                        <p class="cert-issuer">Udemy</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Mar 2025</p>
+                        <p class="cert-description">Credential ID: UC-62d238e3-f31e-4e03-aa61-b3db1f6329c2<br>Skills:
+                            Digital Electronics</p>
+                        <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-62d238e3-f31e-4e03-aa61-b3db1f6329c2.pdf"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i>
+                            Show credential</a>
+                    </div>
                 </div>
-                <div class="cert-content">
-                    <h3 class="cert-title">SQL</h3>
-                    <p class="cert-issuer">Scaler <span class="scaler-badge"><span class="scaler-icon-small"></span></span></p>
-                    <p class="cert-date"><i class="far fa-calendar-alt"></i> May 2024 <span class="cert-validity">No Expiry</span></p>
-                    <p class="cert-description">Comprehensive SQL certification covering database design, queries, and performance optimization.</p>
-                    <a href="https://moonshot.scaler.com/s/sl/jbRVe4zir3" class="cert-link open-pdf-modal" data-modal-title="SQL Certificate"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+
+                <!-- Microprocessor interfacing -->
+                <div class="cert-card" data-category="vlsi">
+                    <div class="cert-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Microprocessor interfacing</h3>
+                        <p class="cert-issuer">NPTEL</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> May 2023</p>
+                        <p class="cert-description">Credential ID: NPTEL23EE06563232661<br>Skills: Verilog</p>
+                        <a href="https://drive.google.com/file/d/1aDZk4hBifdmGTE5qEGAq0fny46h8yvFM/view"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-            </div>            <!-- Python Libraries -->
-            <div class="cert-card scaler-cert">
-                <div class="cert-icon">
-                    <i class="fab fa-python"></i>
+
+                <!-- NATURAL HAZARD -->
+                <div class="cert-card" data-category="ee">
+                    <div class="cert-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">NATURAL HAZARD</h3>
+                        <p class="cert-issuer">NPTEL</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Apr 2023</p>
+                        <p class="cert-description">Credential ID: Roll no-NPTEL23CE55S4422108603020603</p>
+                        <a href="https://drive.google.com/file/d/18EOy7ucpTxMxDi9ffF9z5ALapfQpv76a/view"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-                <div class="cert-content">
-                    <h3 class="cert-title">Python Libraries</h3>
-                    <p class="cert-issuer">Scaler <span class="scaler-badge"><span class="scaler-icon-small"></span></span></p>
-                    <p class="cert-date"><i class="far fa-calendar-alt"></i> August 2024 <span class="cert-validity">No Expiry</span></p>
-                    <p class="cert-description">Expert knowledge in Python libraries for data science and machine learning including NumPy, Pandas, and Scikit-learn.</p>
-                    <a href="https://moonshot.scaler.com/s/sl/h60LlZ_W9u" class="cert-link open-pdf-modal" data-modal-title="Python Libraries Certificate"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+
+                <!-- SQL(Basic) -->
+                <div class="cert-card hackerrank-cert" data-category="de">
+                    <div class="cert-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">SQL (Basic)</h3>
+                        <p class="cert-issuer">HackerRank <span class="cert-logo-badge hackerrank-badge"><i
+                                    class="fab fa-hackerrank"></i></span></p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Apr 2023</p>
+                        <p class="cert-description">Skills: SQL</p>
+                        <a href="https://www.hackerrank.com/certificates/2d9d0276ba7d" class="cert-link" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-            </div>            <!-- EDA Fundamentals -->
-            <div class="cert-card scaler-cert">
-                <div class="cert-icon">
-                    <i class="fas fa-chart-line"></i>
+
+                <!-- Introduction to smart grids -->
+                <div class="cert-card" data-category="ee">
+                    <div class="cert-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Introduction to smart grids</h3>
+                        <p class="cert-issuer">NPTEL</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Oct 2022</p>
+                        <p class="cert-description">Credential ID: NPTEL22EE82S13980081</p>
+                        <a href="https://drive.google.com/file/d/15NCSWqoKmd8SIiToVUDGkCGNS-3BwMck/view"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-                <div class="cert-content">
-                    <h3 class="cert-title">EDA Fundamentals</h3>
-                    <p class="cert-issuer">Scaler <span class="scaler-badge"><span class="scaler-icon-small"></span></span></p>
-                    <p class="cert-date"><i class="far fa-calendar-alt"></i> October 2024 <span class="cert-validity">No Expiry</span></p>
-                    <p class="cert-description">Exploratory Data Analysis techniques for uncovering patterns, anomalies, and insights from complex datasets.</p>
-                    <a href="https://moonshot.scaler.com/s/sl/TUqYGYlh45" class="cert-link open-pdf-modal" data-modal-title="EDA Fundamentals Certificate"><i class="fas fa-external-link-alt"></i> Verify Certificate</a>
+
+                <!-- Renewable Energy Engineering -->
+                <div class="cert-card" data-category="ee">
+                    <div class="cert-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Renewable Energy Engineering</h3>
+                        <p class="cert-issuer">NPTEL</p>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Apr 2022</p>
+                        <p class="cert-description">Credential ID: NPTEL22CH27S23240384</p>
+                        <a href="https://drive.google.com/file/d/1XKHdS2zFA15P1dyWDS9UqrANufkXoPFL/view"
+                            class="cert-link" target="_blank" rel="noopener noreferrer"><i
+                                class="fas fa-external-link-alt"></i> Show credential</a>
+                    </div>
                 </div>
-            </div>
+
+
             </div> <!-- Closing scroll-content -->
         </div> <!-- Closing horizontal-scroll-wrapper -->
     </div>
