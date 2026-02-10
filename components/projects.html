@@ -23,6 +23,87 @@
         <div class="horizontal-scroll-wrapper">
             <div class="scroll-content projects-grid">
 
+                <!-- Semiconductors: Wafer Analytics -->
+                <div class="project-card" data-category="semiconductors">
+                    <div class="project-image">
+                        <img src="assets/projects/Semiconductors/wafer.png" alt="Wafer Analytics">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Semiconductor Wafer Defect Analytics</h3>
+                        <p class="project-description">Developed a Tableau dashboard analyzing 38,000-wafer defect
+                            dataset. Visualized defect origins and yield impact. Developed a CNN-based multi-class
+                            classifier using WM-811K dataset to predict defect types accurately.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Yield Analysis</span>
+                            <span class="tech-tag">Semiconductors</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://public.tableau.com/app/profile/akshat.baranwal/viz/DefectsinWafers/Dashboard1"
+                                class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- EE: Solar Tracking -->
+                <div class="project-card" data-category="ee">
+                    <div class="project-image">
+                        <img src="assets/projects/EE/Solar.jpg" alt="Solar Tracking">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Solar Tracking & Energy Optimization</h3>
+                        <p class="project-description">Engineered a high-voltage, 1,920-cell PV array system in
+                            MATLAB/Simulink, achieving an average of 6% energy yield increase using a tracker.
+                            Developed and benchmarked three control architectures (MPPT P&O, P&O with tracking, IC with
+                            tracking). Integrated dynamic parasitic load modeling to determine precise Net Power Yield
+                            under real-world Arizona conditions.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Simulink</span>
+                            <span class="tech-tag">MPPT</span>
+                            <span class="tech-tag">Control Systems</span>
+                            <span class="tech-tag">Power Electronics</span>
+                            <span class="tech-tag">Energy Optimization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://solar.akshatbaranwal.me" class="project-link" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semiconductors: 5nm SPC -->
+                <div class="project-card" data-category="semiconductors">
+                    <div class="project-image">
+                        <img src="assets/projects/Semiconductors/cleanroom.jpeg" alt="5nm SPC">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">5nm Process Control (SPC) & Yield Analytics</h3>
+                        <p class="project-description">Designed a Digital Twin simulation of a 5nm fab. Implemented SPC
+                            charts in Python to visualize tool drift. Built a root cause analysis engine using SQL and
+                            Streamlit to correlate upstream parameters with yield loss.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">SPC</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Yield Analytics</span>
+                            <span class="tech-tag">Process Control</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://fabsi.akshatbaranwal.me/" class="project-link" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i>
+                                View Project</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- EE: Smart Grid -->
                 <div class="project-card" data-category="ee">
                     <div class="project-image">
@@ -50,32 +131,7 @@
                     </div>
                 </div>
 
-                <!-- EE: Solar Tracking -->
-                <div class="project-card" data-category="ee">
-                    <div class="project-image">
-                        <img src="assets/projects/EE/Solar.jpg" alt="Solar Tracking">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Solar Tracking & Energy Optimization</h3>
-                        <p class="project-description">Engineered a high-voltage, 1,920-cell PV array system in
-                            MATLAB/Simulink, achieving a 4.3% energy yield increase using a single-axis tracker.
-                            Developed and benchmarked three control architectures (MPPT P&O, P&O with tracking, IC with
-                            tracking). Integrated dynamic parasitic load modeling to determine precise Net Power Yield
-                            under real-world Arizona conditions.</p>
-                        <div class="project-tech-stack">
-                            <span class="tech-tag">MATLAB</span>
-                            <span class="tech-tag">Simulink</span>
-                            <span class="tech-tag">MPPT</span>
-                            <span class="tech-tag">Control Systems</span>
-                            <span class="tech-tag">Power Electronics</span>
-                            <span class="tech-tag">Energy Optimization</span>
-                        </div>
-                        <!-- <div class="project-links">
-                            <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
-                                View Project</a>
-                        </div> -->
-                    </div>
-                </div>
+
 
                 <!-- VLSI: Neural Network FPGA -->
                 <div class="project-card" data-category="vlsi">
@@ -84,11 +140,16 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Neural Network Hardware Implementation on FPGA</h3>
-                        <p class="project-description">Designed and implemented a feed forward neural network in
-                            Verilog, complete with training and gradient computation modules synthesized on FPGA. Built
-                            memory initialization (.mif) files and FSM-based control logic. Verified functional
-                            correctness through ModelSim simulations and deployed a fully synthesizable training
-                            architecture using Quartus Prime.</p>
+                        <p class="project-description">Designed a parameterizable feed forward neural network in Verilog
+                            featuring signed fixed point arithmetic for
+                            gradient descent and weight optimization. Ported and synthesized the architecture for the
+                            Seeed Studio Spartan Edge Accelerator Board (Xilinx
+                            Spartan-7) FPGA for hardware acceleration. Engineered an automated data pipeline using
+                            Vivado IP Catalog to manage on chip Block RAM and initialized
+                            datasets using .coe coefficient files. Developed an FSM based driver to interface with board
+                            level peripherals, including LED status indicators and
+                            button triggered training resets. Validated training convergence and architectural timing
+                            constraints through Vivado Logic Analyzer and simulations.</p>
                         <div class="project-tech-stack">
                             <span class="tech-tag">Verilog</span>
                             <span class="tech-tag">FPGA</span>
@@ -322,7 +383,7 @@
                             <span class="tech-tag">Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://fabdata.streamlit.app" class="project-link" target="_blank"><i
+                            <a href="https://fabsi.akshatbaranwal.me/" class="project-link" target="_blank"><i
                                     class="fas fa-external-link-alt"></i>
                                 View Project</a>
                         </div>
@@ -355,57 +416,7 @@
                     </div>
                 </div>
 
-                <!-- Semiconductors: Wafer Analytics -->
-                <div class="project-card" data-category="semiconductors">
-                    <div class="project-image">
-                        <img src="assets/projects/Semiconductors/wafer.png" alt="Wafer Analytics">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Semiconductor Wafer Defect Analytics</h3>
-                        <p class="project-description">Developed a Tableau dashboard analyzing 38,000-wafer defect
-                            dataset. Visualized defect origins and yield impact. Developed a CNN-based multi-class
-                            classifier using WM-811K dataset to predict defect types accurately.</p>
-                        <div class="project-tech-stack">
-                            <span class="tech-tag">Tableau</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">CNN</span>
-                            <span class="tech-tag">Deep Learning</span>
-                            <span class="tech-tag">Yield Analysis</span>
-                            <span class="tech-tag">Semiconductors</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://public.tableau.com/app/profile/akshat.baranwal/viz/DefectsinWafers/Dashboard1"
-                                class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i>
-                                View Project</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Semiconductors: 5nm SPC -->
-                <div class="project-card" data-category="semiconductors">
-                    <div class="project-image">
-                        <img src="assets/projects/Semiconductors/cleanroom.jpeg" alt="5nm SPC">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">5nm Process Control (SPC) & Yield Analytics</h3>
-                        <p class="project-description">Designed a Digital Twin simulation of a 5nm fab. Implemented SPC
-                            charts in Python to visualize tool drift. Built a root cause analysis engine using SQL and
-                            Streamlit to correlate upstream parameters with yield loss.</p>
-                        <div class="project-tech-stack">
-                            <span class="tech-tag">SPC</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">Yield Analytics</span>
-                            <span class="tech-tag">Process Control</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://fabdata.streamlit.app" class="project-link" target="_blank"><i
-                                    class="fas fa-external-link-alt"></i>
-                                View Project</a>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Semiconductors: CVD Optimization -->
                 <div class="project-card" data-category="semiconductors">

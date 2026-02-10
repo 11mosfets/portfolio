@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This website showcases my journey and expertis
 
 ## 🚀 About Me
 
-I am a **Data Engineer & VLSI Designer** with a dual passion for hardware precision and data scalability. 
+I am a **Data Engineer & VLSI Designer** with a passion for hardware precision and data scalability. 
 - **Experience**: ~1 year across **LTIMindtree** and **Energy Institute Bangalore**.
 - **Education**: MS in Computer Engineering (Electrical Engineering) from Arizona State University.
 - **Core Skills**: Python, SQL, Snowflake, AWS, SystemVerilog, 7nm PDK, Streamlit, Tableau.
